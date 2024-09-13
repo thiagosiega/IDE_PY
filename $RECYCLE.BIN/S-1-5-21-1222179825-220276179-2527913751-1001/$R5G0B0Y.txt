@@ -1,7 +1,0 @@
-from tkinter import *
-root = Tk()
-root.title('Título da janela')
-root.geometry('300x300')
-root.mainloop()
-btn = Button(root, text='Clique aqui!')
-btn.pack()

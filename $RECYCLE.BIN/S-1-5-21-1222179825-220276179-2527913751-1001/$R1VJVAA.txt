@@ -1,1 +1,0 @@
-btn = Button(root, text='Clique aqui', command=funcao)

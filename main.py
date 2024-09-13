@@ -60,8 +60,6 @@ def codigo_base():
         "#imports",
         "from tkinter import *",
         "#defs",
-        "def acao_botao():",
-        "    print('Botao foi clicado!')",
         "#labels/btns",
         "root = Tk()",
         "root.title('Titulo da janela')",
@@ -89,11 +87,17 @@ def codigo_tk_btn_comando():
         "def acao_botao():",
         "    print('Botao foi clicado!')"
     ]
-    adicionar_codigo(comando_codigo, "#defs")
+    #verifica se a função já foi adicionada
+    posicao = encontrar_posicao_adicao("def acao_botao():")
+    if posicao is None:
+        adicionar_codigo(comando_codigo, "#defs")
+        
     codigo_tk_btn()
+    
 
 def acao_play():
-    print("Ícone Play foi clicado!")
+    Comando = "python Teste.py"
+    os.system(Comando)
 
 def ajustar_icones():
     altura_barra_topo = 50
